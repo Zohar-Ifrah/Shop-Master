@@ -6,6 +6,8 @@ import { store } from './store/store'
 import { AppHeader } from './cmps/app-header'
 import { About } from './pages/about'
 import { ProductIndex } from './pages/product-index'
+import { ProductDetails } from './pages/product-details'
+import { ProductEdit } from './pages/product-edit'
 
 
 export default function App() {
@@ -19,9 +21,9 @@ export default function App() {
             <Route element={<Home />} path="/" />
             <Route element={<ProductIndex />} path="/product" />
             <Route element={<About />} path="/about" />
-            {/* <Route element={<ProductEdit />} path="/product/edit" /> */}
-            {/* <Route element={<ProductEdit />} path="/product/edit/:productId" /> */}
-            {/* <Route element={<ProductDetails />} path="/product/details/:productId" /> */}
+            <Route element={<ProductEdit />} path="/product/edit" />
+            <Route element={<ProductEdit />} path="/product/edit/:productId" />
+            <Route element={<ProductDetails />} path="/product/details/:productId" />
             {/* <Route element={<UserProfile />} path="/user" /> */}
           </Routes>
           {/* <AppFooter /> */}

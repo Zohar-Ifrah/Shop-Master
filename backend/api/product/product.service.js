@@ -31,7 +31,8 @@ async function add(product) {
     try {
         const collection = await getCollection(COLLECTION_NAME)
         const productModel = _createProductModel(product)
-
+        console.log('productModel >>>', productModel);
+        
         const doc = await collection.insertOne(productModel)
         return { ...productModel, _id: doc.insertedId }
     } catch (err) {
@@ -98,12 +99,14 @@ async function removeAll() {
 }
 
 
-function _createProductModel({ name, email, phone, imgID }) {
+function _createProductModel({ name, sku, description, category, marketingDate, price }) {
     return {
         name,
-        email,
-        phone,
-        imgID,
+        sku,
+        description,
+        category,
+        marketingDate,
+        price,
     }
 }
 
