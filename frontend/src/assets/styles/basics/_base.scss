@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Circular-Regular, sans-serif;
+    line-height: 1.5;
+    // color: $clr2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Circular-Light, sans-serif;
+    // color: $clr2;
+}
+
+ul {
+    list-style: none;
+}
+
+
+img {
+    width: 100%;
+}
+
+p {
+    font-family: Circular-Light;
+    // color: $clr7;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
