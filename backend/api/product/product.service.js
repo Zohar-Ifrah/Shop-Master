@@ -32,7 +32,7 @@ async function add(product) {
         const collection = await getCollection(COLLECTION_NAME)
         const productModel = _createProductModel(product)
         console.log('productModel >>>', productModel);
-        
+
         const doc = await collection.insertOne(productModel)
         return { ...productModel, _id: doc.insertedId }
     } catch (err) {
@@ -57,6 +57,8 @@ async function get(productId) {
 
 async function update(product) {
     try {
+        console.log('product', product);
+
         const collection = await getCollection(COLLECTION_NAME)
         const updatedProduct = {
             ...product,
@@ -111,7 +113,7 @@ function _createProductModel({ name, sku, description, category, marketingDate, 
 }
 
 function _buildCriteria(filterBy) {
-    
+
     const criteria = {}
 
     if (filterBy.name) {

@@ -58,7 +58,7 @@ export function ProductIndex() {
         onSetSort={onSetSort}
         onAddProduct={onAddProduct}
       /> */}
-      <h1 className='product-title'>Our Products</h1>
+      <h1 className='product-title'>Products</h1>
       <ProductList
         products={products}
         onRemoveProduct={onRemoveProduct}

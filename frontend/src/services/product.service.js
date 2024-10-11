@@ -228,7 +228,9 @@ function remove(productId) {
 //for add and edit (id depends)
 function save(product) {
     if (product._id) {
-        return httpService.put(BASE_URL, product)
+        console.log('product', BASE_URL +  product._id);
+
+        return httpService.put(BASE_URL +  product._id, product)
         // return asyncStorageService.put(STORAGE_KEY, product)
     } else {
         return httpService.post(BASE_URL, product)
@@ -253,7 +255,7 @@ function getCategorys() {
 }
 
 function getDefaultFilter() {
-    return { name: ''}
+    return { name: '' }
 }
 
 function getDefaultSort() {

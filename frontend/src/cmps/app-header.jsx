@@ -1,51 +1,42 @@
+import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
-// import { useEffect, useState } from "react"
-
-// import { UserMsg } from "./user-msg"
-// import { userService } from "../services/user.service"
-// import { LoginSignup } from "./login-signup"
-
 
 export function AppHeader() {
     // const [user, setUser] = useState(userService.getLoggedinUser())
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     // useEffect(() => {
 
     // }, [])
 
-    // function onLogout() {
-    //     userService
-    //         .logout()
-    //         .then(() => { setUser(null) })
-    // }
+    function toggleMenu(toggle = true) {
+        toggle ?
+            setIsMenuOpen(!isMenuOpen) :
+            setIsMenuOpen(toggle)
+    }
 
-    // function onChangeLoginStatus(user) {
-    //     console.log('from header: ', user)
-    //     setUser(user)
-    // }
+    // close menu only only if navigating to a different page
+    function handleNavClick(e) {
+        if (!e.currentTarget.classList.contains('active')) {
+            setIsMenuOpen(false)
+        }
+    }
 
     return (
         <header className='app-header' >
             <h1>Shop-Master</h1>
-            {/* <UserMsg /> */}
-{/* 
-            {user ? (
-                < section className='logged-user-header-info' >
-                    <h2>Hello {user.fullname}</h2>
-                    <button className=' log-btn btn' onClick={onLogout}>Logout</button>
-                </ section >
-            ) : (
-                <section className='login-container'>
-                    <LoginSignup onChangeLoginStatus={onChangeLoginStatus} />
-                </section>
-            )} */}
 
-            <nav className='main-nav'>
-                {/* {user && <NavLink to="/user" className=''>Profile</NavLink>} */}
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/product">Products</NavLink>
-                <NavLink to="/about">About</NavLink>
+            <div className="hamburger-menu" onClick={toggleMenu} >
+                <span className="menu_title">Menu</span>
+                &#9776;
+            </div>
+            <nav className={'main-nav' + (isMenuOpen ? ' active' : '')}>
+
+                <NavLink to="/" onClick={handleNavClick}>Home</NavLink>
+                <NavLink to="/product" onClick={handleNavClick}>Products</NavLink>
+                <NavLink to="/about" onClick={handleNavClick}>About</NavLink>
             </nav>
         </header>
     )
 }
+{/* {user && <NavLink to="/user" className=''>Profile</NavLink>} */ }

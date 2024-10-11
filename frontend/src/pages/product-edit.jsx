@@ -1,14 +1,17 @@
+import { useSelector } from "react-redux"
 import { useEffect, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 
+import { useForm } from "../custom-hooks/useForm"
 import { productService } from "../services/product.service"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 // import { LabelSelector } from "../cmps/label-select"
 
 export function ProductEdit() {
-    const [productToEdit, setProductToEdit] = useState(productService.getEmptyProduct())
     const navigate = useNavigate()
     const { productId } = useParams()
+    const [productToEdit, setProductToEdit, handleChange] =
+    useForm(useSelector((storeState) => storeState.productModule.emptyProduct))
 
     useEffect(() => {
         productId && loadProduct()
@@ -22,13 +25,6 @@ export function ProductEdit() {
                 console.log('Had issues in product details', err)
                 navigate('/product')
             })
-    }
-
-    function handleChange({ target }) {
-        let { value, type, name: field, checked } = target
-        type === 'checkbox' ? value = checked :
-            value = type === 'number' ? +value : value
-        setProductToEdit(prevProduct => ({ ...prevProduct, [field]: value }))
     }
 
     function onSaveProduct(ev) {
@@ -75,6 +71,17 @@ export function ProductEdit() {
                     id="price"
                     placeholder="Enter price"
                     value={productToEdit.price}
+                    onChange={handleChange}
+                />
+            </div>
+
+            <div>
+                <label htmlFor="sku">SKU : </label>
+                <input type="number"
+                    name="sku"
+                    id="sku"
+                    placeholder="Enter SKU"
+                    value={productToEdit.sku}
                     onChange={handleChange}
                 />
             </div>

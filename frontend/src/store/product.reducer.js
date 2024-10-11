@@ -10,7 +10,8 @@ export const SORT_BY = 'SORT_BY'
 const initialState = {
     products: [],
     filterBy: productService.getDefaultFilter(),
-    sortBy: productService.getDefaultSort()
+    sortBy: productService.getDefaultSort(), 
+    emptyProduct: productService.getEmptyProduct(),
 }
 
 export function productReducer(state = initialState, action) {
