@@ -1,12 +1,12 @@
 // import { useDispatch, useSelector } from "react-redux"
-// import { useEffect } from "react"
 import { useSelector } from "react-redux"
 
-import { loadProducts, removeProduct, saveProduct } from "../store/product.action"
+import { loadProducts, removeProduct } from "../store/product.action"
 import { ProductList } from "../cmps/product-list"
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
+import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 
-// import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 // import { productService } from "../services/product.service"
 // import { ProductFilter } from "../cmps/product-filter"
 // import { FILTER_BY, SORT_BY } from "../store/product.reducer"
@@ -22,34 +22,34 @@ export function ProductIndex() {
     loadProducts(filterBy, sortBy)
   }, [filterBy, sortBy])
 
-//   function onAddProduct() {
-//     const productToSave = productService.getEmptyProduct()
-//     saveProduct(productToSave)
-//       .then(savedProduct => {
-//         showSuccessMsg(`Product added (id: ${savedProduct.Name})`)
-//       })
-//       .catch(err => {
-//         showErrorMsg('Cannot add product')
-//       })
-//   }
+  //   function onAddProduct() {
+  //     const productToSave = productService.getEmptyProduct()
+  //     saveProduct(productToSave)
+  //       .then(savedProduct => {
+  //         showSuccessMsg(`Product added (id: ${savedProduct.Name})`)
+  //       })
+  //       .catch(err => {
+  //         showErrorMsg('Cannot add product')
+  //       })
+  //   }
 
   function onRemoveProduct(productId) {
-    // removeProduct(productId)
-    //   .then(() => {
-    //     showSuccessMsg('Product removed')
-    //   })
-    //   .catch(err => {
-    //     showErrorMsg('Cannot remove product')
-    //   })
+    removeProduct(productId)
+      .then(() => {
+        showSuccessMsg('Product removed')
+      })
+      .catch(err => {
+        showErrorMsg('Cannot remove product')
+      })
   }
 
-//   function onSetFilter(filterToEdit) {
-//     dispatch({ type: FILTER_BY, filterToEdit })
-//   }
+  //   function onSetFilter(filterToEdit) {
+  //     dispatch({ type: FILTER_BY, filterToEdit })
+  //   }
 
-//   function onSetSort(sortToEdit) {
-//     dispatch({ type: SORT_BY, sortToEdit })
-//   }
+  //   function onSetSort(sortToEdit) {
+  //     dispatch({ type: SORT_BY, sortToEdit })
+  //   }
 
   return (
     <section className='product-index'>
@@ -58,7 +58,10 @@ export function ProductIndex() {
         onSetSort={onSetSort}
         onAddProduct={onAddProduct}
       /> */}
-      <h1 className='product-title'>Products</h1>
+      <section>
+        <h1 className='product-title'>Products</h1>
+        <button className="btn"><Link to="/product/edit">Add Product</Link></button>
+      </section>
       <ProductList
         products={products}
         onRemoveProduct={onRemoveProduct}

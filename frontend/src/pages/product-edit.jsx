@@ -5,22 +5,39 @@ import { Link, useNavigate, useParams } from "react-router-dom"
 import { useForm } from "../custom-hooks/useForm"
 import { productService } from "../services/product.service"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
-// import { LabelSelector } from "../cmps/label-select"
+
 
 export function ProductEdit() {
     const navigate = useNavigate()
     const { productId } = useParams()
     const [productToEdit, setProductToEdit, handleChange] =
-    useForm(useSelector((storeState) => storeState.productModule.emptyProduct))
+        useForm(useSelector((storeState) => storeState.productModule.emptyProduct))
+
+    const [selectedCategory, setSelectedCategory] = useState('')
+    const categorys = [
+        'Personal Care',
+        'Home',
+        'Kitchen',
+        'Fitness',
+        'Stationery',
+        'Electronics',
+        'Pet Care',
+        'Beverage',
+        'Snack',
+        'Sport'
+    ]
 
     useEffect(() => {
         productId && loadProduct()
         // eslint-disable-next-line
-    },[productId])
+    }, [productId])
 
     function loadProduct() {
         productService.getById(productId)
-            .then(product => setProductToEdit(product))
+            .then(product => {
+                setProductToEdit(product)
+                setSelectedCategory(product.category || '')
+            })
             .catch(err => {
                 console.log('Had issues in product details', err)
                 navigate('/product')
@@ -29,7 +46,8 @@ export function ProductEdit() {
 
     function onSaveProduct(ev) {
         ev.preventDefault()
-        productService.save(productToEdit)
+        const productToSave = { ...productToEdit, category: selectedCategory }
+        productService.save(productToSave)
             .then((product) => {
                 console.log('product saved', product)
                 showSuccessMsg('Product saved!')
@@ -41,12 +59,10 @@ export function ProductEdit() {
             })
     }
 
-    // function onLabelChange(selectedLabels) {
-    //     setProductToEdit((prevFilter) => ({
-    //         ...prevFilter,
-    //         labels: selectedLabels,
-    //     }))
-    // }
+    function handleCategoryChange(event) {
+        setSelectedCategory(event.target.value)
+    }
+
 
     if (productId && productToEdit.name === '') return <h1>loading...</h1>
     return <section className="product-edit">
@@ -97,6 +113,19 @@ export function ProductEdit() {
                 />
             </div>
 
+            <div>
+                <label htmlFor="category">Category:</label>
+                <select id="category" value={selectedCategory} onChange={handleCategoryChange}>
+                    <option value="" disabled>Select a category</option>
+                    {categorys.map((category) => (
+                        <option key={category} value={category}>
+                            {category}
+                        </option>
+                    ))}
+                </select>
+            </div>
+
+
             {/* {productToEdit._id &&
                 <div>
                     <label htmlFor="price">In Stock : </label>
@@ -108,8 +137,6 @@ export function ProductEdit() {
                     />
                 </div>
             } */}
-
-            {/* <LabelSelector onLabelChange={onLabelChange} productToEdit={productToEdit} /> */}
 
             <div>
                 <button className="btn">{productToEdit._id ? 'Save' : 'Add'}</button>
