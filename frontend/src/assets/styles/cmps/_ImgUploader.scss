@@ -1,0 +1,29 @@
+.img-uploader {
+    text-align: center;
+
+    .btn-style-copy {
+        display: inline-block;
+        padding: 10px 0px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .upload-preview {
+        border: 2px dashed #ccc;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .upload-preview img {
+        width: 12em;
+        height: 12em;
+        object-fit: contain;
+    }
+
+    .btn-style-copy:hover {
+        background-color: #0056b3;
+    }
+}

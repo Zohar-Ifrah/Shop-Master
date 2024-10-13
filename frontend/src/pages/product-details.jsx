@@ -1,51 +1,48 @@
-import { useEffect, useState } from "react"
-import { Link, useNavigate, useParams } from "react-router-dom"
-import { useSelector } from "react-redux"
+import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
-import { showErrorMsg } from "../services/event-bus.service"
-import { productService } from "../services/product.service"
-
+import { showErrorMsg } from "../services/event-bus.service";
+import { productService } from "../services/product.service";
 
 export function ProductDetails() {
-
-
-    const { productId } = useParams()
-    const navigate = useNavigate()
-    const products = useSelector((storeState) => storeState.products)
-    const [product, setProduct] = useState(products?.find(p => p._id === productId))
+    const { productId } = useParams();
+    const navigate = useNavigate();
+    const products = useSelector((storeState) => storeState.products);
+    const [product, setProduct] = useState(products?.find(p => p._id === productId));
 
     useEffect(() => {
         if (!product) {
-            loadProduct() // רק אם המוצר לא נמצא בסטור
+            loadProduct(); // if not in store
         }
         // eslint-disable-next-line
-    }, [product])
+    }, [product]);
 
     function loadProduct() {
         productService.getById(productId)
             .then((fetchedProduct) => setProduct(fetchedProduct))
             .catch((err) => {
-                console.log('Had issues in product details', err)
-                showErrorMsg('Cannot load product')
-                navigate('/product')
-            })
+                console.log('Had issues in product details', err);
+                showErrorMsg('Cannot load product');
+                navigate('/product');
+            });
     }
 
-    // 2DO swap with real loader
-    if (!product) return <h1>loadings....</h1>
+    // 2DO swap with a real loader
+    if (!product) return <h1>Loading...</h1>;
 
-    return <div className='product-details'>
-        <h3>Product Details</h3>
-        <h5>ID: {product._id}</h5>
-        <h4>Name: {product.name}</h4>
-        <h4>Category: {Array.isArray(product.category) ? product.category.map(c => <p key={c}>{c}</p>) : <p>{product.category}</p>}</h4>
-
-        <h4>Description: {product.description}</h4>
-        <p>Price: <span>{product.price.toLocaleString()}$</span></p>
-        <h4>sku: {product.sku}</h4>
-        <h4>Created At: {new Date(product.marketingDate).toLocaleDateString()}</h4>
-        {/* <h4>inStock: {product.inStock ? '✔' : '❌'}</h4> */}
-
-        <Link className="btn" to="/product">Back to List</Link>
-    </div>
+    return (
+        <div className='product-details'>
+            <img src={product.imgUrl} alt={product.name} className='product-image' />
+            <div className='product-info'>
+                <h2 className='product-name'>{product.name}</h2>
+                <p className='product-description'>{product.description}</p>
+                {product.category && <p className='product-category'>Category: {product.category}</p>}
+                <p className='product-sku'>SKU: {product.sku}</p>
+                <p className='product-price'>Price: ${product.price.toFixed(2)}</p>
+                <p className='product-marketing-date'>Available since: {new Date(product.marketingDate).toLocaleDateString()}</p>
+            </div>
+            <Link className="btn" to="/product">Back to List</Link>
+        </div>
+    );
 }

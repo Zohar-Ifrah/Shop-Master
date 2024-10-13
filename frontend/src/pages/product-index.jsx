@@ -1,11 +1,12 @@
-// import { useDispatch, useSelector } from "react-redux"
-import { useSelector } from "react-redux"
-
-import { loadProducts, removeProduct } from "../store/product.action"
-import { ProductList } from "../cmps/product-list"
 import { useEffect } from "react"
-import { Link } from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux"
+import { Link, Outlet } from "react-router-dom"
+
+import { ProductList } from "../cmps/product-list"
+import { loadProducts, removeProduct } from "../store/product.action"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
+import { FILTER_BY, SORT_BY } from "../store/product.reducer"
+import { ProductFilter } from "../cmps/product-filter"
 
 // import { productService } from "../services/product.service"
 // import { ProductFilter } from "../cmps/product-filter"
@@ -13,7 +14,7 @@ import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 
 
 export function ProductIndex() {
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const products = useSelector((storeState) => storeState.productModule.products)
   const filterBy = useSelector((storeState) => storeState.productModule.filterBy)
   const sortBy = useSelector((storeState) => storeState.productModule.sortBy)
@@ -43,29 +44,30 @@ export function ProductIndex() {
       })
   }
 
-  //   function onSetFilter(filterToEdit) {
-  //     dispatch({ type: FILTER_BY, filterToEdit })
-  //   }
+    function onSetFilter(filterToEdit) {
+      dispatch({ type: FILTER_BY, filterToEdit })
+    }
 
-  //   function onSetSort(sortToEdit) {
-  //     dispatch({ type: SORT_BY, sortToEdit })
-  //   }
+    function onSetSort(sortToEdit) {
+      dispatch({ type: SORT_BY, sortToEdit })
+    }
 
   return (
     <section className='product-index'>
-      {/* <ProductFilter
+      <ProductFilter
         onSetFilter={onSetFilter}
         onSetSort={onSetSort}
-        onAddProduct={onAddProduct}
-      /> */}
+        // onAddProduct={onAddProduct}
+      />
       <section>
-        <h1 className='product-title'>Products</h1>
-        <button className="btn"><Link to="/product/edit">Add Product</Link></button>
+        <h1 className='product-title'>ALL PRODUCTS</h1>
+        {/* <button className="btn"><Link to="/product/edit">Add Product</Link></button> */}
       </section>
       <ProductList
         products={products}
         onRemoveProduct={onRemoveProduct}
       />
+      <Outlet />
     </section>
   )
 }

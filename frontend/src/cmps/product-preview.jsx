@@ -1,21 +1,46 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
+import { ConfirmModal } from "./ConfirmModal"
 
 export function ProductPreview({ product, onRemoveProduct }) {
-    return <article className="product-preview-content">
-        <img src="https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png" alt="product-img" />
-        <h4>{product.name}</h4>
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
-        {/* {product.labels && product.labels.map((label, idx) =>
-            <li key={label + (idx * Math.random()).toLocaleString()}>
-                {label}</li>)} */}
+    function handleDelete() {
+        setIsModalOpen(true)
+    }
 
-        <p>Price: <span>{product.price.toLocaleString()}$</span></p>
+    function handleConfirmDelete() {
+        onRemoveProduct(product._id)
+        setIsModalOpen(false)
+    }
 
-        <div>
-            <Link className="btn" to={`/product/details/${product._id}`}>Details</Link>
-            <Link className="btn" to={`/product/edit/${product._id}`}>Edit</Link>
-            <button className="btn" onClick={() => { onRemoveProduct(product._id) }}>Delete</button>
-        </div>
+    function handleCloseModal() {
+        setIsModalOpen(false)
+    }
 
-    </article>
+    return (
+        <article className="product-preview-content">
+            <Link to={`/product/details/${product._id}`} className="product-link">
+                <section>
+                    <img src={product.imgUrl} alt="product-img" />
+                    <h4>{product.name}</h4>
+                    <p>Price: <span>{product.price.toLocaleString()}$</span></p>
+                </section>
+                <div className="quick-view">Quick View</div>
+            </Link>
+
+            <div className="actions">
+                <Link className="btn" to={`/product/edit/${product._id}`}>Edit</Link>
+                <button className="btn" onClick={handleDelete}>Delete</button>
+            </div>
+
+            <ConfirmModal
+                isOpen={isModalOpen}
+                onRequestClose={handleCloseModal}
+                onConfirm={handleConfirmDelete}
+                msg="Delete Product?"
+                msgContant="Are you sure you want to delete this product? This action cannot be undone."
+            />
+        </article>
+    )
 }

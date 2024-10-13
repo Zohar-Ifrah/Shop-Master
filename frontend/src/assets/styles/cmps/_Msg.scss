@@ -1,0 +1,73 @@
+.msg {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInSlide 0.4s ease-in-out, fadeOut 2s ease-in-out 3s forwards;
+    z-index: 999;
+    opacity: 0.95;
+    max-width: 300px;
+
+    &.success {
+        background-color: #d4edda;
+        color: #155724;
+    }
+
+    &.error {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+
+    h4 {
+        margin: 0;
+        margin-right: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+        margin-right: 0.75rem;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: inherit;
+        margin-left: auto;
+        border-radius: 50%;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes fadeInSlide {
+        from {
+            opacity: 0;
+            transform: translateY(-20%);
+        }
+        to {
+            opacity: 0.95;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 0.95;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+}

@@ -1,13 +1,8 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { NavLink } from "react-router-dom"
 
 export function AppHeader() {
-    // const [user, setUser] = useState(userService.getLoggedinUser())
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-    // useEffect(() => {
-
-    // }, [])
 
     function toggleMenu(toggle = true) {
         toggle ?
@@ -39,4 +34,3 @@ export function AppHeader() {
         </header>
     )
 }
-{/* {user && <NavLink to="/user" className=''>Profile</NavLink>} */ }

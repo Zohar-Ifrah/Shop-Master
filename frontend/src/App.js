@@ -8,27 +8,31 @@ import { About } from './pages/about'
 import { ProductIndex } from './pages/product-index'
 import { ProductDetails } from './pages/product-details'
 import { ProductEdit } from './pages/product-edit'
-
+import { UserMsg } from './cmps/user-msg'
 
 export default function App() {
 
   return (
-    <Provider store={store}>
-      <Router>
-        <section className="main-layout app">
-          <AppHeader />
-          <Routes>
-            <Route element={<Home />} path="/" />
-            <Route element={<ProductIndex />} path="/product" />
-            <Route element={<About />} path="/about" />
-            <Route element={<ProductEdit />} path="/product/edit" />
-            <Route element={<ProductEdit />} path="/product/edit/:productId" />
-            <Route element={<ProductDetails />} path="/product/details/:productId" />
-            {/* <Route element={<UserProfile />} path="/user" /> */}
-          </Routes>
-          {/* <AppFooter /> */}
-        </section>
-      </Router>
-    </Provider >
+    <>
+      <UserMsg />
+      <Provider store={store}>
+        <Router>
+          <section className="main-layout app">
+            <AppHeader />
+            <Routes>
+              <Route element={<Home />} path="/" />
+              <Route element={<ProductIndex />} path="/product">
+                <Route element={<ProductEdit />} path="edit" />
+                <Route element={<ProductEdit />} path="edit/:productId" />
+                <Route element={<ProductDetails />} path="details/:productId" />
+              </Route>
+              <Route element={<About />} path="/about" />
+              {/* <Route element={<UserProfile />} path="/user" /> */}
+            </Routes>
+            {/* <AppFooter /> */}
+          </section>
+        </Router>
+      </Provider >
+    </>
   )
 }

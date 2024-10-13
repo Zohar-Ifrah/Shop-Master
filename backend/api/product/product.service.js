@@ -101,7 +101,7 @@ async function removeAll() {
 }
 
 
-function _createProductModel({ name, sku, description, category, marketingDate, price }) {
+function _createProductModel({ name, sku, description, category, marketingDate, price, imgUrl }) {
     return {
         name,
         sku,
@@ -109,6 +109,7 @@ function _createProductModel({ name, sku, description, category, marketingDate, 
         category,
         marketingDate,
         price,
+        imgUrl,
     }
 }
 

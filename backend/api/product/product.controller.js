@@ -2,8 +2,15 @@ const productService = require('./product.service')
 console.log("product.controller")
 
 async function query(req, res) {
+    let params = {}
+    if (!req.query || Object.keys(req.query).length === 0) {
+        params = { filterBy: '', sortBy: { desc: 1, type: '' } }
+    } else {
+        params = req.query
+    }
+
     try {
-        const products = await productService.query(req.query)
+        const products = await productService.query(params)
         res.json(products)
     } catch (err) {
         console.error('Failed to query products:', err)
