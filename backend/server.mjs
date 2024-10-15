@@ -29,8 +29,6 @@ if (process.env.NODE_ENV === 'production') {
         origin: [
             'http://127.0.0.1:3000',
             'http://localhost:3000',
-            'http://127.0.0.1:3001',
-            'http://localhost:3001',
             'http://127.0.0.1:4200',
             'http://localhost:4200'
         ],
@@ -49,7 +47,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3030
 http.listen(port, () => {
     logger.info('Server is running on port: ' + port)
 })
