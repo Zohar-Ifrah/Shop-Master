@@ -1,5 +1,13 @@
-.category-select{
+.category-select {
     display: flex;
-    gap: 0.3em;
+    gap: 0.5em;
+    flex-direction: row;
     flex-wrap: wrap;
+    background-color: #e8edf3;
+    position: absolute;
+    width: 98%;
+    margin-inline: auto;
+    top: 71px;
+    z-index: 2;
+    border-radius: 10px;
 }

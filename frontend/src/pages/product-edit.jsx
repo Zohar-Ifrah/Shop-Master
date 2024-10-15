@@ -16,7 +16,7 @@ export function ProductEdit() {
     const [isAddingNewCategory, setIsAddingNewCategory] = useState(false)
     const [productToEdit, setProductToEdit, handleChange] =
         useForm(productService.getEmptyProduct())
-
+        
     const [selectedCategory, setSelectedCategory] = useState('')
     const [categories, setCategories] = useState([])
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -211,37 +211,20 @@ export function ProductEdit() {
                 </div>
             )}
 
-
-
-            {/* {productToEdit._id &&
-                <div>
-                    <label htmlFor="price">In Stock : </label>
-                    <input type="checkbox"
-                        name="inStock"
-                        id="inStock"
-                        checked={productToEdit.inStock}
-                        onChange={handleChange}
-                    />
-                </div>
-            } */}
-
             <div className="action-btns">
                 <button type="submit" className="save-btn">
                     {productToEdit._id ? 'Save' : 'Add'}
                 </button>
-                <button type="button" onClick={onCancel}>Cancel</button> {/* לחצן ביטול */}
+                <button type="button" onClick={onCancel}>Cancel</button>
             </div>
         </form>
 
-        {/* רכיב המודל */}
         <ConfirmModal
             isOpen={isModalOpen}
             onRequestClose={handleCloseModal}
             onConfirm={handleConfirmCancel}
             msg="Cancel Changes?"
             msgContant="Are you sure you want to cancel? Any unsaved changes will be lost."
-        // msg="Delete Product?"
-        // msgContant="Are you sure you want to delete this product? This action cannot be undone."
         />
     </section>
     )

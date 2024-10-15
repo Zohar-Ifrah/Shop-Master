@@ -1,59 +1,56 @@
-import { httpService } from './http.service.js'
+import { httpService } from './http.service'
 
-const BASE_URL = 'auth/'
-const STORAGE_KEY_LOGGEDIN = 'loggedinUser'
+const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
+const API = 'user'
 
 export const userService = {
     login,
     logout,
     signup,
-    getById,
     getLoggedinUser,
-    getEmptyCredentials,
+    saveLocalUser,
+    getUsers,
+    getById,
 }
 
-function getById(userId) {
-    return httpService.get(BASE_URL + userId)
+function getUsers() {
+    return httpService.get(API)
 }
 
-function login({ username, password }) {
-    return httpService.post(BASE_URL + 'login', { username, password })
-        .then(user => {
-            if (user) return _setLoggedinUser(user)
-        })
+async function getById(userId) {
+    const user = await httpService.get(`${API}/${userId}`)
+    return user
 }
 
-function signup({ username, password, fullname }) {
-    const user = { username, password, fullname }
-    return httpService.post(BASE_URL + 'signup', user)
-        .then(_setLoggedinUser)
-}
-
-function logout() {
-    return httpService.post(BASE_URL + 'logout')
-        .then(() => {
-            sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN)
-        })
-}
-
-function getLoggedinUser() {
-    return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN))
-}
-
-function _setLoggedinUser(user) {
-    const userToSave = { _id: user._id, fullname: user.fullname, activities: user.activities }
-    sessionStorage.setItem(STORAGE_KEY_LOGGEDIN, JSON.stringify(userToSave))
-    return userToSave
-}
-
-function getEmptyCredentials() {
-    return {
-        username: '',
-        password: '',
-        fullname: ''
+async function login(userCred) {
+    const user = await httpService.post('auth/login', userCred)
+    if (user) {
+        return saveLocalUser(user)
     }
 }
 
+async function signup(userCred) {
+    const user = await httpService.post('auth/signup', userCred)
+    return saveLocalUser(user)
+}
 
+async function logout() {
+    sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN_USER)
+    return await httpService.post('auth/logout')
+}
 
+function saveLocalUser(user) {
+    user = {
+        userName: user.username,
+        fullName: user.fullname,
+        createdAt: user.createdAt,
+        products: user.products,
+    }
 
+    sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
+    return user
+}
+
+function getLoggedinUser() {
+    return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER))
+}

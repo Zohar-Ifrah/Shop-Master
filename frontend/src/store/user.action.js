@@ -1,8 +1,9 @@
-import { userService } from '../services/user.service.js'
 import { store } from '../store/store.js'
-import { SET_USER, SET_USER_ACTIVITIES } from './user.reducer.js'
+import { SET_USER } from './user.reducer.js'
+import { userService } from '../services/user.service.js'
 
-export function login(credentials) {
+export async function login(credentials) {
+
     return userService.login(credentials)
         .then(user => {
             store.dispatch({ type: SET_USER, user })
@@ -14,7 +15,7 @@ export function login(credentials) {
         })
 }
 
-export function signup(credentials) {
+export async function signup(credentials) {
     return userService.signup(credentials)
         .then(user => {
             store.dispatch({ type: SET_USER, user })
@@ -26,7 +27,7 @@ export function signup(credentials) {
         })
 }
 
-export function logout() {
+export async function logout() {
     return userService.logout()
         .then(() => {
             store.dispatch({ type: SET_USER, user: null })
@@ -34,24 +35,5 @@ export function logout() {
         .catch(err => {
             console.error('Cannot logout:', err)
             throw err
-        })
-}
-
-export function addActivity(activity) {
-    return userService.addActivity(activity)
-        .then((activities) => {
-            store.dispatch({ type: SET_USER_ACTIVITIES, activities })
-        })
-        .catch(err => {
-            console.error('Cannot logout:', err)
-            throw err
-        })
-}
-
-export function editUser(user) {
-    // edit store user.
-    return userService.editUser(user)
-        .then(user => {
-            store.dispatch({ type: SET_USER, user })
         })
 }

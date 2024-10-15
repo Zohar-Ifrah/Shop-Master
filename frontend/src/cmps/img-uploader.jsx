@@ -1,49 +1,51 @@
-import { useEffect, useState } from 'react';
-import { uploadService } from '../services/upload.service';
+import { useEffect, useState } from 'react'
+
+import { uploadService } from '../services/upload.service'
 
 export function ImgUploader({ onUploaded = null, imageToDisplay = null }) {
+
+  const [isUploading, setIsUploading] = useState(false)
   const [imgData, setImgData] = useState({
     imgUrl: imageToDisplay || null,
     height: 500,
     width: 500,
-  });
-  const [isUploading, setIsUploading] = useState(false);
+  })
 
   useEffect(() => {
     if (imageToDisplay) {
-      setImgData((prevState) => ({ ...prevState, imgUrl: imageToDisplay }));
+      setImgData((prevState) => ({ ...prevState, imgUrl: imageToDisplay }))
     }
-  }, [imageToDisplay]);
+  }, [imageToDisplay])
 
   const handleDrop = async (event) => {
-    event.preventDefault();
+    event.preventDefault()
     try {
-      setIsUploading(true);
+      setIsUploading(true)
 
-      const file = event.dataTransfer ? event.dataTransfer.files[0] : event.target.files[0];
-      const uploadedImg = await uploadService.uploadImg(file);
+      const file = event.dataTransfer ? event.dataTransfer.files[0] : event.target.files[0]
+      const uploadedImg = await uploadService.uploadImg(file)
 
       setImgData({
         imgUrl: uploadedImg.secure_url,
         width: uploadedImg.width,
         height: uploadedImg.height,
-      });
+      })
 
-      setIsUploading(false);
-      onUploaded && onUploaded(uploadedImg.secure_url);
+      setIsUploading(false)
+      onUploaded && onUploaded(uploadedImg.secure_url)
     } catch (err) {
-      console.error('Failed to upload', err);
-      setIsUploading(false);
+      console.error('Failed to upload', err)
+      setIsUploading(false)
     }
-  };
+  }
 
   const handleDragOver = (event) => {
-    event.preventDefault();
-  };
+    event.preventDefault()
+  }
 
   const getUploadLabel = () => {
-    return isUploading ? 'Uploading....' : imgData.imgUrl ? 'Upload another image' : 'Upload Image';
-  };
+    return isUploading ? 'Uploading....' : imgData.imgUrl ? 'Upload another image' : 'Upload Image'
+  }
 
   return (
     <section className='img-uploader'>
@@ -69,5 +71,5 @@ export function ImgUploader({ onUploaded = null, imageToDisplay = null }) {
         />
       </div>
     </section>
-  );
+  )
 }

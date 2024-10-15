@@ -11,6 +11,7 @@ export function ConfirmModal({ isOpen, onRequestClose, onConfirm, msg = 'Are you
             overlayClassName="modal-overlay"
             ariaHideApp={false}
         >
+            
             <h2>{msg}</h2>
             <span>{msgContant}</span>
             <div className="actions">

@@ -1,17 +1,19 @@
-import { productService } from '../services/product.service.js'
 import { store } from './store.js'
-import { ADD_PRODUCT, REMOVE_PRODUCT, SET_PRODUCTS, UPDATE_PRODUCT } from './product.reducer.js'
+import { productService } from '../services/product.service.js'
+import { ADD_PRODUCT, REMOVE_PRODUCT, SET_PRODUCTS, SET_TOTAL_PAGES, UPDATE_PRODUCT } from './product.reducer.js'
 
-
-
-export function loadProducts(filterBy, sortBy) {
-    return productService.query(filterBy, sortBy)
-        .then((products) => {
-            store.dispatch({ type: SET_PRODUCTS, products })
+export async function loadProducts(filterBy, sortBy, page, limit) {
+    return productService.query(filterBy, sortBy, page, limit)
+        .then((response) => {
+            store.dispatch({ type: SET_PRODUCTS, products: response.products })
+            store.dispatch({ type: SET_TOTAL_PAGES, totalPages: response.totalPages })
+        })
+        .catch(err => {
+            console.error('Cannot load products', err)
         })
 }
 
-export function removeProduct(productId) {
+export async function removeProduct(productId) {
 
     return productService.remove(productId)
         .then(() => {
@@ -23,7 +25,7 @@ export function removeProduct(productId) {
         })
 }
 
-export function saveProduct(product) {
+export async function saveProduct(product) {
     const type = product._id ? UPDATE_PRODUCT : ADD_PRODUCT
     return productService.save(product)
         .then(savedProduct => {

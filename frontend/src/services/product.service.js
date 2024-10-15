@@ -13,11 +13,16 @@ export const productService = {
     getDefaultSort
 }
 
-function query(filterBy = {}, sortBy = {}) {
-    const params = { filterBy, sortBy }
+function query(filterBy = {}, sortBy = {}, page = 1, limit = 20) {
+    const params = {
+        filterBy,
+        sortBy,
+        page,
+        limit,
+    }
+
     return httpService.get(BASE_URL, params)
 }
-
 
 function getById(productId) {
     return httpService.get(BASE_URL + productId)
@@ -25,17 +30,14 @@ function getById(productId) {
 
 function remove(productId) {
     return httpService.delete(BASE_URL + productId)
-    // return asyncStorageService.remove(STORAGE_KEY, productId)
 }
 
-//for add and edit (id depends)
+// for add and edit (ID-depends)
 function save(product) {
     if (product._id) {
-        return httpService.put(BASE_URL +  product._id, product)
-        // return asyncStorageService.put(STORAGE_KEY, product)
+        return httpService.put(BASE_URL + product._id, product)
     } else {
         return httpService.post(BASE_URL, product)
-        // return asyncStorageService.post(STORAGE_KEY, product)
     }
 }
 
@@ -51,31 +53,21 @@ function getEmptyProduct() {
         imgUrl: ''
     }
 }
-
-function getCategories() {
-    return httpService.get(BASE_URL)
-        .then(products => {
-            const uniqueCategories = new Set()
-            products.forEach(product => {
-                if (product.category) {
-                    uniqueCategories.add(product.category)
-                }
-            })
-            return Array.from(uniqueCategories).sort((a, b) => a.localeCompare(b))
-        })
-        .catch(err => {
-            console.error('Error fetching categories:', err)
-            throw err
-        })
+async function getCategories() {
+    try {
+        const res = await httpService.get(BASE_URL)
+        return res.categories
+    } catch (error) {
+        console.error('Error fetching categories:', error)
+        return []
+    }
 }
 
 
-
 function getDefaultFilter() {
-    return { name: '', categories: []}
+    return { name: '', categories: [] }
 }
 
 function getDefaultSort() {
     return { type: '', desc: 1 }
 }
-

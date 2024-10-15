@@ -1,46 +1,113 @@
-import { useState } from "react"
+import { useState } from 'react'
 
-// import { login, signup } from "../store/user.action"
-// import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
-// import { CredentialsForm } from "./credentials-form"
+export function LoginSignup(props) {
 
-export function LoginSignup({ onChangeLoginStatus }) {
+    const [isSignup, setIsSignup] = useState(false)
+    const [credentials, setCredentials] = useState({
+        username: '',
+        password: '',
+        fullname: '',
+    })
 
-    const [isSignup, setIsSignUp] = useState(false)
+    function clearState() {
+        setCredentials({ username: '', password: '', fullname: '' })
+        setIsSignup(false)
+    }
 
-    // function onSubmit(credentials) {
-    //     isSignup ? onSignup(credentials) : onLogin(credentials)
-    // }
+    function handleChange(ev) {
+        const field = ev.target.name
+        const value = ev.target.value
+        setCredentials({ ...credentials, [field]: value })
+    }
 
-    // function onLogin(credentials) {
-    //     login(credentials)
-    //         .then(onChangeLoginStatus)
-    //         .then(() => { showSuccessMsg('Logged in successfully') })
-    //         .catch((err) => { showErrorMsg('Oops try again') })
-    // }
+    function onLogin(ev = null) {
+        if (ev) ev.preventDefault()
+        if (!credentials.username) return
+        props.onLogin(credentials)
+        clearState()
+    }
 
-    // function onSignup(credentials) {
-    //     signup(credentials)
-    //         .then(onChangeLoginStatus)
-    //         .then(() => { showSuccessMsg('Signed in successfully') })
-    //         .catch((err) => { showErrorMsg('Oops try again') })
-    // }
+    function onSignup(ev = null) {
+        if (ev) ev.preventDefault()
+        if (
+            !credentials.username ||
+            !credentials.password ||
+            !credentials.fullname
+        )
+            return
+        props.onSignup(credentials)
+        clearState()
+    }
+
+    function toggleSignup() {
+        setIsSignup(!isSignup)
+    }
 
     return (
-        <div className="credentials-page">
-            {/* <CredentialsForm
-                onSubmit={onSubmit}
-                isSignup={isSignup}
-            /> */}
-            {/* <div className="btns">
+        <div className="login-page">
+            <div className="login-signup-container">
+                <div className="link" onClick={toggleSignup}>
+                    {!isSignup ? 'Sign up' : 'Log in'}
+                </div>
+            </div>
 
-                <a href="#/todo" onClick={() => setIsSignUp(!isSignup)} className="login-text">
-                    {isSignup ?
-                        'Already a member? Login' :
-                        'New user? Signup here'
-                    }
-                </a >
-            </div> */}
-        </div >
+            {!isSignup && (
+                <form className="login-form" onSubmit={onLogin}>
+                    <button className="btn-login"> Log in </button>
+                    <input
+                        type="text"
+                        name="username"
+                        value={credentials.username}
+                        placeholder="Username"
+                        onChange={handleChange}
+                        required
+                        autoFocus
+                    />
+
+                    <input
+                        type="password"
+                        name="password"
+                        value={credentials.password}
+                        placeholder="Password"
+                        onChange={handleChange}
+                        required
+                    />
+                </form>
+            )}
+
+            <div className="signup-section">
+                {isSignup && (
+                    <form className="signup-form" onSubmit={onSignup}>
+                        <input
+                            type="text"
+                            name="fullname"
+                            value={credentials.fullname}
+                            placeholder="Fullname"
+                            onChange={handleChange}
+                            required
+                        />
+
+                        <input
+                            type="text"
+                            name="username"
+                            value={credentials.username}
+                            placeholder="Username"
+                            onChange={handleChange}
+                            required
+                        />
+
+                        <input
+                            type="password"
+                            name="password"
+                            value={credentials.password}
+                            placeholder="Password"
+                            onChange={handleChange}
+                            required
+                        />
+                        <button>Sign up</button>
+                    </form>
+                )}
+            </div>
+        </div>
     )
 }

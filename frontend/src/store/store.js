@@ -1,14 +1,11 @@
-// import { userReducer } from "./user.reducer.js"
 import { productReducer } from './product.reducer.js'
 import { combineReducers, legacy_createStore as createStore } from "redux"
-
+import { userReducer } from './user.reducer.js'
 
 const rootReducer = combineReducers({
     productModule: productReducer,
-    // userModule: userReducer
+    userModule: userReducer
 })
-
-
 
 
 export const store = createStore(rootReducer)
@@ -17,4 +14,3 @@ export const store = createStore(rootReducer)
 store.subscribe(() => {
     console.log('Current state is:', store.getState())
 })
-

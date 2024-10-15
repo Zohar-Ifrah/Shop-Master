@@ -1,18 +1,25 @@
-require('dotenv').config()
-const express = require('express')
-const cors = require('cors')
-const path = require('path')
-const logger = require('./services/logger.service')
+import dotenv from 'dotenv'
+dotenv.config()
+import express from 'express'
+import cors from 'cors'
+import path from 'path'
+import { fileURLToPath } from 'url'
+import logger from './services/logger.service.mjs'
 
 // Routes import
-const productRoutes = require('./api/product/product.routes')
-// const userRoutes = require('./api/user/user.routes')
+import productRoutes from './api/product/product.routes.mjs'
+import { authRoutes } from './api/auth/auth.routes.mjs'
+import { userRoutes } from './api/user/user.routes.mjs'
 
 const app = express()
-const http = require('http').createServer(app)
+const http = (await import('http')).createServer(app)
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+
+// Handle __dirname in ES Modules
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Serve static files from 'public' in production
 if (process.env.NODE_ENV === 'production') {
@@ -32,23 +39,22 @@ if (process.env.NODE_ENV === 'production') {
     app.use(cors(corsOptions))
 }
 
-// socketService.init(http, corsOptions);
-
-//Routes
+// Routes
+app.use('/api/auth', authRoutes)
+app.use('/api/user', userRoutes)
 app.use('/api/product', productRoutes)
-// app.use('/api/user', userRoutes)
 
 // Serve index.html for all other routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
+    res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000
 http.listen(port, () => {
     logger.info('Server is running on port: ' + port)
 })
 
-// error handling middleware**
+// Error handling middleware
 app.use((err, req, res, next) => {
     console.error(err.stack)
     res.status(500).send('Something broke!')

@@ -28,3 +28,372 @@ Sun, 13 Oct 2024 09:28:14 GMT - Info - Server is running on port: 3000
 Sun, 13 Oct 2024 12:50:09 GMT - Info - Server is running on port: 3000
 Sun, 13 Oct 2024 16:02:55 GMT - Info - Server is running on port: 3000
 Sun, 13 Oct 2024 18:50:09 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 15:42:04 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 15:50:40 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 15:50:44 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 15:52:01 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 15:52:26 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 15:56:44 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:03:30 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:04:18 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:05:41 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:07:23 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:11:18 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:11:40 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:17:27 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:21:07 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:22:02 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:37:39 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:38:16 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:38:52 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:39:09 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:40:06 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:46:50 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:47:41 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:49:32 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:50:56 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 16:52:39 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 18:30:31 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 18:34:14 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 19:46:57 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 19:54:29 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 19:54:30 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 19:54:32 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 19:54:33 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 19:58:06 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 20:05:25 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 20:05:26 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 20:05:27 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 20:31:41 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 20:32:40 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 20:37:08 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 20:38:36 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 21:02:49 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 22:28:52 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 22:33:28 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 22:56:02 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:09:20 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:09:20 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:11:11 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:11:11 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:11:13 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:11:13 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:12:21 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:12:21 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:12:23 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:12:23 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:14:40 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:14:41 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:14:45 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:14:45 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:16:20 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:16:20 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:18:22 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:18:34 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:18:38 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:18:38 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:18:49 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:18:49 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:19:06 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:19:06 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:22:02 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:22:11 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:22:17 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:22:17 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:22:53 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:23:08 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:23:12 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:23:12 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:23:59 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:24:34 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:24:39 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:24:39 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:25:08 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:25:14 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:25:14 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:25:47 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:25:54 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:25:54 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:26:46 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:26:51 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:26:51 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:29:07 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:29:12 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:29:12 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:29:31 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:29:31 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:33:11 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:33:27 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:33:27 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:37:20 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:37:24 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:37:24 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:37:41 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:38:08 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:38:08 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:38:49 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:38:49 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:38:50 GMT - Error - cannot find users
+Mon, 14 Oct 2024 23:38:50 GMT - Error - Failed to get users
+Mon, 14 Oct 2024 23:39:40 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:48:09 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:48:12 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:48:12 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:48:27 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:48:32 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:48:32 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:48:48 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:48:50 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:48:50 GMT - Error - Failed to get user
+Mon, 14 Oct 2024 23:50:04 GMT - Info - Server is running on port: 3000
+Mon, 14 Oct 2024 23:50:08 GMT - Error - while finding user by id: 670d77f541bea5d4c5704d29
+Mon, 14 Oct 2024 23:50:08 GMT - Error - Failed to get user
+Tue, 15 Oct 2024 00:03:01 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:04:07 GMT - Error - cannot find users
+Tue, 15 Oct 2024 00:04:07 GMT - Error - Failed to get users
+Tue, 15 Oct 2024 00:05:16 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:05:53 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:06:07 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:10:51 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:11:23 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:14:49 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:46:33 GMT - Debug - auth.service - login with username: Zohar111
+Tue, 15 Oct 2024 00:46:33 GMT - Error - while finding user by username: Zohar111
+Tue, 15 Oct 2024 00:46:33 GMT - Error - Failed to Login ReferenceError: dbService is not defined
+Tue, 15 Oct 2024 00:47:39 GMT - Debug - auth.service - signup with username: f, fullname: f
+Tue, 15 Oct 2024 00:47:39 GMT - Error - while finding user by username: f
+Tue, 15 Oct 2024 00:47:39 GMT - Error - Failed to signup ReferenceError: dbService is not defined
+Tue, 15 Oct 2024 00:51:34 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:51:41 GMT - Debug - auth.service - signup with username: f, fullname: f
+Tue, 15 Oct 2024 00:51:43 GMT - Debug - auth.route - new account created: {"username":"f","password":"$2b$10$BsxcVhkORF5UKv5Y0ZrhiOadbFOHyLBbyYsC593m5i.IpB8LVUJpC","fullname":"f","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","score":100,"_id":"670dbc9f649fd297ebca33b1"}
+Tue, 15 Oct 2024 00:51:43 GMT - Debug - auth.service - login with username: f
+Tue, 15 Oct 2024 00:51:43 GMT - Info - User signup:
+Tue, 15 Oct 2024 00:55:43 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:57:48 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:57:48 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 00:57:59 GMT - Debug - auth.service - signup with username: ff, fullname: ff
+Tue, 15 Oct 2024 00:58:00 GMT - Debug - auth.route - new account created: {"username":"ff","password":"$2b$10$JHCefZC6Htx1Ore1Ske5ouMBBz1cdV1pjMSKrs79gDnPyU34ik53.","fullname":"ff","_id":"670dbe18fec2117994bfd533"}
+Tue, 15 Oct 2024 00:58:00 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 00:58:00 GMT - Info - User signup:
+Tue, 15 Oct 2024 01:04:35 GMT - Debug - auth.service - login with username: f
+Tue, 15 Oct 2024 01:04:35 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:08:50 GMT - Debug - auth.service - login with username: f
+Tue, 15 Oct 2024 01:08:50 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:10:59 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 01:11:03 GMT - Debug - auth.service - login with username: f
+Tue, 15 Oct 2024 01:11:05 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:11:16 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:11:16 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:11:37 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 01:11:41 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:11:42 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:12:07 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 01:12:18 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 01:17:02 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:17:04 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:18:58 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:18:58 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:22:16 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:22:16 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:23:17 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:23:17 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:25:17 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:25:17 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:26:15 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:26:16 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:30:12 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:30:12 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:39:01 GMT - Debug - auth.service - login with username: ff
+Tue, 15 Oct 2024 01:39:01 GMT - Info - User login: 
+Tue, 15 Oct 2024 01:45:09 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 01:46:21 GMT - Debug - auth.service - signup with username: a, fullname: a
+Tue, 15 Oct 2024 01:46:22 GMT - Debug - auth.route - new account created: {"username":"a","password":"$2b$10$grpGMxurEbIEB/gdgPh2u.WW7xyAT0N/tNKK2zu8WIuUf7/ahP3u6","fullname":"a","_id":"670dc96e33740a311e5fb581"}
+Tue, 15 Oct 2024 01:46:22 GMT - Debug - auth.service - login with username: a
+Tue, 15 Oct 2024 01:46:22 GMT - Info - User signup:
+Tue, 15 Oct 2024 01:47:33 GMT - Debug - auth.service - signup with username: aa, fullname: aa
+Tue, 15 Oct 2024 01:47:33 GMT - Debug - auth.route - new account created: {"username":"aa","password":"$2b$10$TPH7va0m9uqff6e6l.S0Oe5SGLAtOoeL2mGc/5QLBThBBC0sjJm6W","fullname":"aa","_id":"670dc9b533740a311e5fb582"}
+Tue, 15 Oct 2024 01:47:33 GMT - Debug - auth.service - login with username: aa
+Tue, 15 Oct 2024 01:47:33 GMT - Info - User signup:
+Tue, 15 Oct 2024 01:55:13 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 01:55:27 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 01:56:32 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 01:56:46 GMT - Debug - auth.service - signup with username: q, fullname: q
+Tue, 15 Oct 2024 01:56:47 GMT - Debug - auth.route - new account created: {"username":"q","password":"$2b$10$8VWYvduT2QBDwIB2HwVcU.hYREo8UbgC1GpKxurSk5ZKnf7lEp/IC","fullname":"q","createdAt":1728957407589,"products":[],"_id":"670dcbdf0bc6318bff384930"}
+Tue, 15 Oct 2024 01:56:47 GMT - Debug - auth.service - login with username: q
+Tue, 15 Oct 2024 01:56:47 GMT - Info - User signup:
+Tue, 15 Oct 2024 01:58:01 GMT - Debug - auth.service - signup with username: z, fullname: z
+Tue, 15 Oct 2024 01:58:02 GMT - Debug - auth.route - new account created: {"username":"z","password":"$2b$10$Ajxe5hIRxEq.4wqW8u/zhuhLymAxlrNkYCyG12WtXkBZYuDpWm76y","fullname":"z","createdAt":1728957482041,"products":[],"_id":"670dcc2a0bc6318bff384931"}
+Tue, 15 Oct 2024 01:58:02 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 01:58:02 GMT - Info - User signup:
+Tue, 15 Oct 2024 02:01:10 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 02:01:24 GMT - Debug - auth.service - signup with username: s, fullname: s
+Tue, 15 Oct 2024 02:01:25 GMT - Debug - auth.route - new account created: {"username":"s","password":"$2b$10$5T6nRM2ZU6MIm6WFPJIove.EdLGqQt6IROVmNHAW6iRKWRRBVJu7i","fullname":"s","createdAt":1728957685889,"products":[{"name":"Carrot","sku":1001,"description":"Fresh and crunchy carrots, perfect for salads or cooking.","category":"Vegetable","marketingDate":1727952000000,"price":2.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763898/Carrot_afhh8l.png"},{"name":"Apple","sku":1002,"description":"Sweet and delicious apples, great as a snack.","category":"Fruit","marketingDate":1727865600000,"price":3,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763897/Apple_oyjo7i.png"},{"name":"Potato","sku":1003,"description":"Red potatoes, excellent for cooking.","category":"Field Crop","marketingDate":1727779200000,"price":1.2,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763905/Potato_epcfog.png"},{"name":"Tomato","sku":1004,"description":"Ripe tomatoes, ideal for salads and sauces.","category":"Vegetable","marketingDate":1727692800000,"price":2.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763909/Tomato_wyvfep.png"},{"name":"Banana","sku":1005,"description":"Fresh bananas, a great source of energy.","category":"Fruit","marketingDate":1727606400000,"price":1.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png"},{"name":"Cucumber","sku":1006,"description":"Crisp cucumbers, perfect for refreshing salads.","category":"Vegetable","marketingDate":1727520000000,"price":1.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763913/Cucumber_iirgav.png"}],"_id":"670dccf5d3524cda4e0d9d81"}
+Tue, 15 Oct 2024 02:01:25 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 02:01:26 GMT - Info - User signup:
+Tue, 15 Oct 2024 02:06:50 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 02:22:41 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 02:22:41 GMT - Info - User login: 
+Tue, 15 Oct 2024 02:27:32 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 02:27:32 GMT - Info - User login: 
+Tue, 15 Oct 2024 02:31:34 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 02:31:34 GMT - Info - User login: 
+Tue, 15 Oct 2024 02:34:06 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 02:34:07 GMT - Info - User login: 
+Tue, 15 Oct 2024 02:39:06 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 02:39:06 GMT - Info - User login: 
+Tue, 15 Oct 2024 02:48:20 GMT - Debug - auth.service - signup with username: z, fullname: z
+Tue, 15 Oct 2024 02:48:20 GMT - Error - Failed to signup Username already taken
+Tue, 15 Oct 2024 02:48:27 GMT - Debug - auth.service - signup with username: zz, fullname: zz
+Tue, 15 Oct 2024 02:48:27 GMT - Debug - auth.route - new account created: {"username":"zz","password":"$2b$10$5OZbgFRLEb2GK2uJFqx/CeacxjaSsxm3if4llwjCSpLlDk9YhBHDi","fullname":"zz","createdAt":1728960507399,"products":[{"_id":"670af498ea71993ecf382593","name":"Carrot","sku":1001,"description":"Fresh and crunchy carrots, perfect for salads or cooking.","category":"Vegetable","marketingDate":1727952000000,"price":2.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763898/Carrot_afhh8l.png"},{"_id":"670af498ea71993ecf382595","name":"Potato","sku":1003,"description":"Red potatoes, excellent for cooking.","category":"Vegetable","marketingDate":1727779200000,"price":1.2,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763905/Potato_epcfog.png"},{"_id":"670af498ea71993ecf382596","name":"Tomato","sku":1004,"description":"Ripe tomatoes, ideal for salads and sauces.","category":"Vegetable","marketingDate":1727692800000,"price":2.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763909/Tomato_wyvfep.png"},{"_id":"670af498ea71993ecf382597","name":"Banana","sku":1005,"description":"Fresh bananas, a great source of energy.","category":"Fruit","marketingDate":1727606400000,"price":1.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png"},{"_id":"670af498ea71993ecf382598","name":"Cucumber","sku":1006,"description":"Crisp cucumbers, perfect for refreshing salads.","category":"Vegetable","marketingDate":1727520000000,"price":1.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763913/Cucumber_iirgav.png"}],"_id":"670dd7fb2d55f5060074ea80"}
+Tue, 15 Oct 2024 02:48:27 GMT - Debug - auth.service - login with username: zz
+Tue, 15 Oct 2024 02:48:27 GMT - Info - User signup:
+Tue, 15 Oct 2024 02:48:34 GMT - Debug - auth.service - login with username: zz
+Tue, 15 Oct 2024 02:48:34 GMT - Info - User login: 
+Tue, 15 Oct 2024 03:00:39 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 03:00:39 GMT - Info - User login: 
+Tue, 15 Oct 2024 04:41:35 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 04:41:35 GMT - Info - User login: 
+Tue, 15 Oct 2024 04:43:40 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 04:43:40 GMT - Info - User login: 
+Tue, 15 Oct 2024 04:45:47 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 04:45:47 GMT - Info - User login: 
+Tue, 15 Oct 2024 04:47:18 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 04:47:18 GMT - Info - User login: 
+Tue, 15 Oct 2024 04:52:34 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 04:52:34 GMT - Info - User login: 
+Tue, 15 Oct 2024 04:56:59 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 04:57:00 GMT - Info - User login: 
+Tue, 15 Oct 2024 04:58:17 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 04:58:17 GMT - Info - User login: 
+Tue, 15 Oct 2024 04:58:23 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 04:58:23 GMT - Info - User login: 
+Tue, 15 Oct 2024 05:00:14 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 05:00:14 GMT - Info - User login: 
+Tue, 15 Oct 2024 05:00:43 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 05:00:43 GMT - Info - User login: 
+Tue, 15 Oct 2024 05:01:43 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 05:01:44 GMT - Info - User login: 
+Tue, 15 Oct 2024 05:03:24 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 05:03:24 GMT - Info - User login: 
+Tue, 15 Oct 2024 05:03:30 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 05:03:30 GMT - Info - User login: 
+Tue, 15 Oct 2024 05:03:41 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 05:03:41 GMT - Info - User login: 
+Tue, 15 Oct 2024 05:38:26 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 05:38:26 GMT - Info - User login: 
+Tue, 15 Oct 2024 05:38:41 GMT - Debug - auth.service - login with username: nat
+Tue, 15 Oct 2024 05:38:41 GMT - Error - Failed to Login Invalid username or password
+Tue, 15 Oct 2024 05:38:48 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 05:38:48 GMT - Info - User login: 
+Tue, 15 Oct 2024 06:11:05 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 06:11:05 GMT - Info - User login: 
+Tue, 15 Oct 2024 06:13:43 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 06:13:43 GMT - Info - User login: 
+Tue, 15 Oct 2024 06:37:11 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 06:38:12 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 06:40:32 GMT - Debug - auth.service - login with username: s
+Tue, 15 Oct 2024 06:40:34 GMT - Info - User login: 
+Tue, 15 Oct 2024 06:56:23 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 06:59:27 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 07:00:01 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 07:00:30 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 07:03:12 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 07:11:20 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 07:12:18 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 07:14:02 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 07:17:16 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 07:18:26 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 07:27:49 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 07:27:50 GMT - Info - User login: 
+Tue, 15 Oct 2024 07:34:34 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 07:34:34 GMT - Info - User login: 
+Tue, 15 Oct 2024 07:34:46 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 07:34:46 GMT - Info - User login: 
+Tue, 15 Oct 2024 07:35:09 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 07:35:09 GMT - Info - User login: 
+Tue, 15 Oct 2024 07:52:49 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:14:46 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:15:20 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:15:40 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:16:23 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:18:59 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:20:35 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:26:43 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:27:59 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:32:19 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:33:22 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:34:21 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:34:23 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:46:02 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:46:31 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 08:50:56 GMT - Debug - auth.service - login with username: ז
+Tue, 15 Oct 2024 08:50:56 GMT - Error - Failed to Login Invalid username or password
+Tue, 15 Oct 2024 08:50:58 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 08:50:58 GMT - Info - User login: 
+Tue, 15 Oct 2024 09:01:59 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:10:22 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:10:22 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:19:43 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:32:00 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:32:04 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:34:18 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:35:18 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:36:42 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:36:48 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:37:12 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:37:21 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 09:38:15 GMT - Debug - auth.service - signup with username: zohar, fullname: zohar
+Tue, 15 Oct 2024 09:38:17 GMT - Debug - auth.route - new account created: {"username":"zohar","password":"$2b$10$qlRKsQSIjEC/.V4uOnVCoewAv/eA6OywYErAxMNuh0DcG8dllzKSa","fullname":"zohar","createdAt":1728985097004,"products":[{"_id":"670af498ea71993ecf382593","name":"Carrot","sku":1001,"description":"Fresh and crunchy carrots, perfect for salads or cooking.","category":"Vegetable","marketingDate":1727952000000,"price":2.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763898/Carrot_afhh8l.png"},{"_id":"670af498ea71993ecf382595","name":"Potato","sku":1003,"description":"Red potatoes, excellent for cooking.","category":"Vegetable","marketingDate":1727779200000,"price":1.2,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763905/Potato_epcfog.png"},{"_id":"670af498ea71993ecf382596","name":"Tomato","sku":1004,"description":"Ripe tomatoes, ideal for salads and sauces.","category":"Vegetable","marketingDate":1727692800000,"price":2.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763909/Tomato_wyvfep.png"},{"_id":"670af498ea71993ecf382597","name":"Banana","sku":1005,"description":"Fresh bananas, a great source of energy.","category":"Fruit","marketingDate":1727606400000,"price":1.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png"},{"_id":"670af498ea71993ecf382598","name":"Cucumber","sku":1006,"description":"Crisp cucumbers, perfect for refreshing salads.","category":"Vegetable","marketingDate":1727520000000,"price":1.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763913/Cucumber_iirgav.png"}],"_id":"670e38092f8e25596d98e48f"}
+Tue, 15 Oct 2024 09:38:17 GMT - Debug - auth.service - login with username: zohar
+Tue, 15 Oct 2024 09:38:17 GMT - Info - User signup:
+Tue, 15 Oct 2024 09:39:56 GMT - Debug - auth.service - login with username: Zohar
+Tue, 15 Oct 2024 09:39:56 GMT - Error - Failed to Login Invalid username or password
+Tue, 15 Oct 2024 09:40:16 GMT - Debug - auth.service - login with username: z
+Tue, 15 Oct 2024 09:40:16 GMT - Error - Failed to Login Invalid username or password
+Tue, 15 Oct 2024 09:40:39 GMT - Debug - auth.service - signup with username: Zohar, fullname: Zohar
+Tue, 15 Oct 2024 09:40:39 GMT - Debug - auth.route - new account created: {"username":"Zohar","password":"$2b$10$mfKWdLhXr3FGkTpfoV1ik.ioz8xLaeA5Aw7pvKmyY5BwIt3m3gxIK","fullname":"Zohar","createdAt":1728985239404,"products":[{"_id":"670af498ea71993ecf382593","name":"Carrot","sku":1001,"description":"Fresh and crunchy carrots, perfect for salads or cooking.","category":"Vegetable","marketingDate":1727952000000,"price":2.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763898/Carrot_afhh8l.png"},{"_id":"670af498ea71993ecf382595","name":"Potato","sku":1003,"description":"Red potatoes, excellent for cooking.","category":"Vegetable","marketingDate":1727779200000,"price":1.2,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763905/Potato_epcfog.png"},{"_id":"670af498ea71993ecf382596","name":"Tomato","sku":1004,"description":"Ripe tomatoes, ideal for salads and sauces.","category":"Vegetable","marketingDate":1727692800000,"price":2.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763909/Tomato_wyvfep.png"},{"_id":"670af498ea71993ecf382597","name":"Banana","sku":1005,"description":"Fresh bananas, a great source of energy.","category":"Fruit","marketingDate":1727606400000,"price":1.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png"},{"_id":"670af498ea71993ecf382598","name":"Cucumber","sku":1006,"description":"Crisp cucumbers, perfect for refreshing salads.","category":"Vegetable","marketingDate":1727520000000,"price":1.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763913/Cucumber_iirgav.png"}],"_id":"670e38972f8e25596d98e490"}
+Tue, 15 Oct 2024 09:40:39 GMT - Debug - auth.service - login with username: Zohar
+Tue, 15 Oct 2024 09:40:39 GMT - Info - User signup:
+Tue, 15 Oct 2024 09:40:49 GMT - Debug - auth.service - login with username: asdasd
+Tue, 15 Oct 2024 09:40:50 GMT - Error - Failed to Login Invalid username or password
+Tue, 15 Oct 2024 09:41:14 GMT - Debug - auth.service - login with username: asdas
+Tue, 15 Oct 2024 09:41:15 GMT - Error - Failed to Login Invalid username or password
+Tue, 15 Oct 2024 09:41:22 GMT - Debug - auth.service - login with username: asdasd
+Tue, 15 Oct 2024 09:41:22 GMT - Error - Failed to Login Invalid username or password
+Tue, 15 Oct 2024 09:41:28 GMT - Debug - auth.service - login with username: 3rqf
+Tue, 15 Oct 2024 09:41:28 GMT - Error - Failed to Login Invalid username or password
+Tue, 15 Oct 2024 09:42:04 GMT - Debug - auth.service - signup with username: Zohar, fullname: Zohar
+Tue, 15 Oct 2024 09:42:05 GMT - Debug - auth.route - new account created: {"username":"Zohar","password":"$2b$10$DZjGrUKqiPCMAgob8wKg4uR1GFA8kfyjN/MsItH0DCUnye/wdRbc.","fullname":"Zohar","createdAt":1728985324973,"products":[{"_id":"670af498ea71993ecf382593","name":"Carrot","sku":1001,"description":"Fresh and crunchy carrots, perfect for salads or cooking.","category":"Vegetable","marketingDate":1727952000000,"price":2.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763898/Carrot_afhh8l.png"},{"_id":"670af498ea71993ecf382595","name":"Potato","sku":1003,"description":"Red potatoes, excellent for cooking.","category":"Vegetable","marketingDate":1727779200000,"price":1.2,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763905/Potato_epcfog.png"},{"_id":"670af498ea71993ecf382596","name":"Tomato","sku":1004,"description":"Ripe tomatoes, ideal for salads and sauces.","category":"Vegetable","marketingDate":1727692800000,"price":2.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763909/Tomato_wyvfep.png"},{"_id":"670af498ea71993ecf382597","name":"Banana","sku":1005,"description":"Fresh bananas, a great source of energy.","category":"Fruit","marketingDate":1727606400000,"price":1.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png"},{"_id":"670af498ea71993ecf382598","name":"Cucumber","sku":1006,"description":"Crisp cucumbers, perfect for refreshing salads.","category":"Vegetable","marketingDate":1727520000000,"price":1.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763913/Cucumber_iirgav.png"}],"_id":"670e38ec2f8e25596d98e491"}
+Tue, 15 Oct 2024 09:42:05 GMT - Debug - auth.service - login with username: Zohar
+Tue, 15 Oct 2024 09:42:05 GMT - Info - User signup:
+Tue, 15 Oct 2024 09:43:00 GMT - Debug - auth.service - signup with username: aa, fullname: aaa
+Tue, 15 Oct 2024 09:43:01 GMT - Debug - auth.route - new account created: {"username":"aa","password":"$2b$10$PO0gCecF0We2J9QHZ2n5b.1z5cGqPYHHvjuOru12NQxFk1qAq1LDm","fullname":"aaa","createdAt":1728985380990,"products":[{"_id":"670af498ea71993ecf382593","name":"Carrot","sku":1001,"description":"Fresh and crunchy carrots, perfect for salads or cooking.","category":"Vegetable","marketingDate":1727952000000,"price":2.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763898/Carrot_afhh8l.png"},{"_id":"670af498ea71993ecf382595","name":"Potato","sku":1003,"description":"Red potatoes, excellent for cooking.","category":"Vegetable","marketingDate":1727779200000,"price":1.2,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763905/Potato_epcfog.png"},{"_id":"670af498ea71993ecf382596","name":"Tomato","sku":1004,"description":"Ripe tomatoes, ideal for salads and sauces.","category":"Vegetable","marketingDate":1727692800000,"price":2.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763909/Tomato_wyvfep.png"},{"_id":"670af498ea71993ecf382597","name":"Banana","sku":1005,"description":"Fresh bananas, a great source of energy.","category":"Fruit","marketingDate":1727606400000,"price":1.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png"},{"_id":"670af498ea71993ecf382598","name":"Cucumber","sku":1006,"description":"Crisp cucumbers, perfect for refreshing salads.","category":"Vegetable","marketingDate":1727520000000,"price":1.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763913/Cucumber_iirgav.png"}],"_id":"670e39242f8e25596d98e492"}
+Tue, 15 Oct 2024 09:43:01 GMT - Debug - auth.service - login with username: aa
+Tue, 15 Oct 2024 09:43:01 GMT - Info - User signup:
+Tue, 15 Oct 2024 09:46:07 GMT - Debug - auth.service - signup with username: na, fullname: na
+Tue, 15 Oct 2024 09:46:08 GMT - Debug - auth.route - new account created: {"username":"na","password":"$2b$10$PShYMOyyPQJnCBbCbUaa1up5SRx8PjKliuRPeWevZxuiEbmApQ1G.","fullname":"na","createdAt":1728985567980,"products":[{"_id":"670af498ea71993ecf382593","name":"Carrot","sku":1001,"description":"Fresh and crunchy carrots, perfect for salads or cooking.","category":"Vegetable","marketingDate":1727952000000,"price":2.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763898/Carrot_afhh8l.png"},{"_id":"670af498ea71993ecf382595","name":"Potato","sku":1003,"description":"Red potatoes, excellent for cooking.","category":"Vegetable","marketingDate":1727779200000,"price":1.2,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763905/Potato_epcfog.png"},{"_id":"670af498ea71993ecf382596","name":"Tomato","sku":1004,"description":"Ripe tomatoes, ideal for salads and sauces.","category":"Vegetable","marketingDate":1727692800000,"price":2.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763909/Tomato_wyvfep.png"},{"_id":"670af498ea71993ecf382597","name":"Banana","sku":1005,"description":"Fresh bananas, a great source of energy.","category":"Fruit","marketingDate":1727606400000,"price":1.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png"},{"_id":"670af498ea71993ecf382598","name":"Cucumber","sku":1006,"description":"Crisp cucumbers, perfect for refreshing salads.","category":"Vegetable","marketingDate":1727520000000,"price":1.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763913/Cucumber_iirgav.png"}],"_id":"670e39df2f8e25596d98e493"}
+Tue, 15 Oct 2024 09:46:08 GMT - Debug - auth.service - login with username: na
+Tue, 15 Oct 2024 09:46:08 GMT - Info - User signup:
+Tue, 15 Oct 2024 09:47:23 GMT - Debug - auth.service - login with username: na
+Tue, 15 Oct 2024 09:47:23 GMT - Info - User login: 
+Tue, 15 Oct 2024 09:48:15 GMT - Debug - auth.service - signup with username: asd, fullname: asdasd
+Tue, 15 Oct 2024 09:48:15 GMT - Debug - auth.route - new account created: {"username":"asd","password":"$2b$10$75yzCAjuKibdt9zjNhCAG.HfZYcCn3R3/v5pZ9JJmTmiX6Nqg7/Da","fullname":"asdasd","createdAt":1728985695154,"products":[{"_id":"670af498ea71993ecf382593","name":"Carrot","sku":1001,"description":"Fresh and crunchy carrots, perfect for salads or cooking.","category":"Vegetable","marketingDate":1727952000000,"price":2.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763898/Carrot_afhh8l.png"},{"_id":"670af498ea71993ecf382595","name":"Potato","sku":1003,"description":"Red potatoes, excellent for cooking.","category":"Vegetable","marketingDate":1727779200000,"price":1.2,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763905/Potato_epcfog.png"},{"_id":"670af498ea71993ecf382596","name":"Tomato","sku":1004,"description":"Ripe tomatoes, ideal for salads and sauces.","category":"Vegetable","marketingDate":1727692800000,"price":2.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763909/Tomato_wyvfep.png"},{"_id":"670af498ea71993ecf382597","name":"Banana","sku":1005,"description":"Fresh bananas, a great source of energy.","category":"Fruit","marketingDate":1727606400000,"price":1.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png"},{"_id":"670af498ea71993ecf382598","name":"Cucumber","sku":1006,"description":"Crisp cucumbers, perfect for refreshing salads.","category":"Vegetable","marketingDate":1727520000000,"price":1.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763913/Cucumber_iirgav.png"}],"_id":"670e3a5f2f8e25596d98e494"}
+Tue, 15 Oct 2024 09:48:15 GMT - Debug - auth.service - login with username: asd
+Tue, 15 Oct 2024 09:48:15 GMT - Info - User signup:
+Tue, 15 Oct 2024 09:48:28 GMT - Debug - auth.service - login with username: na
+Tue, 15 Oct 2024 09:48:28 GMT - Info - User login: 
+Tue, 15 Oct 2024 09:49:07 GMT - Debug - auth.service - login with username: na
+Tue, 15 Oct 2024 09:49:07 GMT - Info - User login: 
+Tue, 15 Oct 2024 10:15:37 GMT - Debug - auth.service - login with username: Zohar
+Tue, 15 Oct 2024 10:15:37 GMT - Info - User login: 
+Tue, 15 Oct 2024 10:16:27 GMT - Debug - auth.service - signup with username: zohar, fullname: zohar
+Tue, 15 Oct 2024 10:16:27 GMT - Debug - auth.route - new account created: {"username":"zohar","password":"$2b$10$VwrRPdZJejVssHOLSzpmiOuGPPy2D5IzEWDRKgcvkOaULORz8sWl2","fullname":"zohar","createdAt":1728987387256,"products":[{"_id":"670af498ea71993ecf382593","name":"Carrot","sku":1001,"description":"Fresh and crunchy carrots, perfect for salads or cooking.","category":"Vegetable","marketingDate":1727952000000,"price":2.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763898/Carrot_afhh8l.png"},{"_id":"670af498ea71993ecf382595","name":"Potato","sku":1003,"description":"Red potatoes, excellent for cooking.","category":"Vegetable","marketingDate":1727779200000,"price":1.2,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763905/Potato_epcfog.png"},{"_id":"670af498ea71993ecf382596","name":"Tomato","sku":1004,"description":"Ripe tomatoes, ideal for salads and sauces.","category":"Vegetable","marketingDate":1727692800000,"price":2.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763909/Tomato_wyvfep.png"},{"_id":"670af498ea71993ecf382597","name":"Banana","sku":1005,"description":"Fresh bananas, a great source of energy.","category":"Fruit","marketingDate":1727606400000,"price":1.5,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728587555/bananas_tatxw8.png"},{"_id":"670af498ea71993ecf382598","name":"Cucumber","sku":1006,"description":"Crisp cucumbers, perfect for refreshing salads.","category":"Vegetable","marketingDate":1727520000000,"price":1.8,"imgUrl":"https://res.cloudinary.com/dqnsrtyxu/image/upload/v1728763913/Cucumber_iirgav.png"}],"_id":"670e40fb2f8e25596d98e496"}
+Tue, 15 Oct 2024 10:16:27 GMT - Debug - auth.service - login with username: zohar
+Tue, 15 Oct 2024 10:16:27 GMT - Info - User signup:
+Tue, 15 Oct 2024 10:17:32 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 10:23:23 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 10:23:49 GMT - Debug - auth.service - login with username: zohar
+Tue, 15 Oct 2024 10:23:50 GMT - Info - User login: 
+Tue, 15 Oct 2024 10:26:09 GMT - Info - Server is running on port: 3000
+Tue, 15 Oct 2024 10:26:43 GMT - Debug - auth.service - login with username: zohar
+Tue, 15 Oct 2024 10:26:45 GMT - Info - User login: 

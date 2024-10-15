@@ -26,6 +26,7 @@ export function showSuccessMsg(txt) {
     console.log('success')
     showUserMsg({ txt, type: 'success' })
 }
+
 export function showErrorMsg(txt) {
     console.log('error')
     showUserMsg({ txt, type: 'error' })

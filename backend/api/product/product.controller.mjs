@@ -1,17 +1,17 @@
-const productService = require('./product.service')
-console.log("product.controller")
+import * as productService from './product.service.mjs'
 
 async function query(req, res) {
     let params = {}
+
     if (!req.query || Object.keys(req.query).length === 0) {
-        params = { filterBy: '', sortBy: { desc: 1, type: '' } }
+        params = { filterBy: { categories: [], name: '' }, sortBy: { desc: 1, type: '' }, page: 1, limit: 20 }
     } else {
         params = req.query
     }
 
     try {
-        const products = await productService.query(params)
-        res.json(products)
+        const { products, totalPages, categories } = await productService.query(params)
+        res.json({ products, totalPages, categories })
     } catch (err) {
         console.error('Failed to query products:', err)
         res.status(500).json({ error: 'Failed to query products', details: err.message })
@@ -41,7 +41,6 @@ async function add(req, res) {
         res.status(500).json({ error: 'Failed to add product', details: err.message })
     }
 }
-
 
 async function remove(req, res) {
     try {
@@ -83,7 +82,7 @@ async function removeAll(req, res) {
     }
 }
 
-module.exports = {
+export {
     query,
     get,
     add,

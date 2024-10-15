@@ -1,5 +1,6 @@
-const express = require('express')
-const { get, add, query, update, remove, removeAll } = require('./product.controller')
+import express from 'express'
+import { get, add, query, update, remove, removeAll } from './product.controller.mjs'
+
 const router = express.Router()
 
 console.log("product.routes")
@@ -13,4 +14,4 @@ router.put('/:id', update)
 router.delete('/:id', remove)
 router.delete('/', removeAll)
 
-module.exports = router
+export default router

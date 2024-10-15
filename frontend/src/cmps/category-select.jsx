@@ -1,48 +1,44 @@
 import { useEffect, useState } from "react"
 import { productService } from "../services/product.service"
 
-export function CategorySelector({ onCategoryChange, productToEdit, filterByToEdit }) {
+export function CategorySelector({ onCategoryChange, filterByToEdit }) {
 
-    const [selectedCategories, setSelectedCategories] = useState(productToEdit ? productToEdit.categories : filterByToEdit.categories)
-    // const categories = productService.getCategories()
+    const [selectedCategories, setSelectedCategories] = useState(filterByToEdit.categories)
     const [categories, setCategories] = useState([])
 
+    useEffect(() => {
+        onCategoryChange(selectedCategories)
+        loadCategories()
+        // eslint-disable-next-line
+    }, [selectedCategories])
 
-    function loadCategories() {
-        productService.getCategories()
-            .then(setCategories)
+    async function loadCategories() {
+        return productService.getCategories()
+            .then(categories => {
+                setCategories(categories)
+            })
             .catch(err => {
-                console.error('Error loading categories:', err)
+                console.log('Failed to load categories:', err)
             })
     }
 
-    useEffect(() => {
-        loadCategories()
-        console.log('LOADING');
-        
-        // onCategoryChange(selectedCategories)
-        // ***TO CHECK*** (why / if should remove?)
-        // eslint-disable-next-line      
-    }, [selectedCategories])
-
     function handleCategoryChange(event) {
         const category = event.target.value
+        setSelectedCategories((prevSelected) => {
+            const updatedSelected = event.target.checked
+                ? [...prevSelected, category]
+                : prevSelected.filter(c => c !== category)
 
-        if (event.target.checked) {
-            setSelectedCategories([...selectedCategories, category])
-        } else {
-            setSelectedCategories(selectedCategories.filter(c => c !== category))
-        }
+            return updatedSelected
+        })
     }
-
 
     if (!categories) {
-        console.log(categories);
-        return 'loading...'
+        return <p>loading...</p>
     }
+
     return (
         <div className="category-select">
-            <p>Categories:</p>
             {categories.map((category) => (
                 <div key={category} className="category-item">
                     <label htmlFor={category}>
@@ -52,7 +48,6 @@ export function CategorySelector({ onCategoryChange, productToEdit, filterByToEd
                             id={category}
                             value={category}
                             checked={selectedCategories.includes(category)}
-                            // checked={false}
                             onChange={handleCategoryChange}
                         />
                     </label>

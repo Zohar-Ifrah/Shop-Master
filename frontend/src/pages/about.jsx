@@ -3,7 +3,7 @@ export function About() {
         <section className="about-container">
             <h1>About Shop-Master</h1>
             <p>
-                Welcome to Shop-Master, your ultimate solution for efficient product management in retail. Our platform is designed to streamline inventory processes, empowering users to manage their products with ease and confidence.
+                Welcome to Shop-Master, your ultimate solution for efficient product management in retail. Our platform is designed to streamline inventory processes, empowering users to manage their products without any problem and with confidence.
             </p>
 
             <h2>Our Mission</h2>
@@ -17,7 +17,7 @@ export function About() {
                 <li>Automatic data saving and retrieval with secure API calls</li>
                 <li>Advanced search and filtering options for quick access to products</li>
                 <li>Customizable product attributes to suit your unique inventory needs</li>
-                <li>Reliable customer support and resources for a seamless experience</li>
+                <li>Reliable customer support and resources for a smooth experience</li>
             </ul>
 
             <h2>Our Values</h2>
@@ -30,5 +30,5 @@ export function About() {
                 Experience the difference with Shop-Master! Join our growing community of retailers who are transforming their inventory management processes. Explore our platform today and discover how we can help you achieve a more organized and efficient business.
             </p>
         </section>
-    );
+    )
 }

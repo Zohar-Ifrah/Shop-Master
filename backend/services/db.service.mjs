@@ -1,11 +1,17 @@
-require('dotenv').config() 
-const MongoClient = require('mongodb').MongoClient
-const ObjectId = require('mongodb').ObjectId
+import dotenv from 'dotenv'
+import { MongoClient, ObjectId } from 'mongodb'
+
+export const dbService = {
+    getCollection,
+    toObjectId
+}
+
+dotenv.config()
 
 const url = process.env.MONGO_URI
 const dbName = process.env.DB_NAME
 
-var dbConn = null
+let dbConn = null
 
 async function connect() {
     if (dbConn) return dbConn
@@ -21,21 +27,16 @@ async function connect() {
     }
 }
 
-async function getCollection(collectionName) {
+export async function getCollection(collectionName) {
     const db = await connect()
     return db.collection(collectionName)
 }
 
-function toObjectId(id) {
+export function toObjectId(id) {
     try {
         return new ObjectId(id)
     } catch (err) {
         console.error('Invalid ObjectId format:', id, err)
         throw err
     }
-}
-
-module.exports = {
-    toObjectId,
-    getCollection,
 }

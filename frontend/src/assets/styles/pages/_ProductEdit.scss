@@ -55,7 +55,7 @@
     input,
     select {
         font-size: 1em;
-        padding: 0.8em 0.2em;
+        padding: 0.8em 0em;
         border: 1px solid #ddd;
         border-radius: 6px;
         transition: all 0.3s ease;
@@ -147,7 +147,7 @@
         button,
         .btn {
             font-size: 1em;
-            padding: 0.6em;
+            padding-block: 0.6em;
         }
     }
 }

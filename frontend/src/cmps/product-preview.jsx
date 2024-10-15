@@ -1,9 +1,12 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { useSelector } from "react-redux"
+
 import { ConfirmModal } from "./ConfirmModal"
 
 export function ProductPreview({ product, onRemoveProduct }) {
     const [isModalOpen, setIsModalOpen] = useState(false)
+    const user = useSelector((storeState) => storeState.userModule.loggedinUser)
 
     function handleDelete() {
         setIsModalOpen(true)
@@ -20,19 +23,24 @@ export function ProductPreview({ product, onRemoveProduct }) {
 
     return (
         <article className="product-preview-content">
+
             <Link to={`/product/details/${product._id}`} className="product-link">
                 <section>
+
                     <img src={product.imgUrl} alt="product-img" />
                     <h4>{product.name}</h4>
                     <p>Price: <span>{product.price.toLocaleString()}$</span></p>
+                    
                 </section>
                 <div className="quick-view">Quick View</div>
             </Link>
 
-            <div className="actions">
-                <Link className="btn" to={`/product/edit/${product._id}`}>Edit</Link>
-                <button className="btn" onClick={handleDelete}>Delete</button>
-            </div>
+            {user &&
+                <div className="actions">
+                    <Link className="btn" to={`/product/edit/${product._id}`}>Edit</Link>
+                    <button className="btn" onClick={handleDelete}>Delete</button>
+                </div>
+            }
 
             <ConfirmModal
                 isOpen={isModalOpen}
