@@ -1,6 +1,6 @@
 import { authService } from './auth.service.mjs'
 import logger from '../../services/logger.service.mjs'
-//w
+
 export async function login(req, res) {
     const { username, password } = req.body
     try {
@@ -24,7 +24,7 @@ export async function signup(req, res) {
         const user = await authService.login(credentials.username, credentials.password)
         logger.info('User signup:', user)
         const loginToken = authService.getLoginToken(user)
-        res.cookie('loginToken', loginToken) // , { sameSite: 'None', secure: true } - https only for cookies 
+        res.cookie('loginToken', loginToken) 
         res.json(user)
     } catch (err) {
         logger.error('Failed to signup ' + err)
@@ -40,4 +40,3 @@ export async function logout(req, res) {
         res.status(400).send({ err: 'Failed to logout' })
     }
 }
-
